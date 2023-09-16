@@ -1,0 +1,23 @@
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: max-content;
+}
+
+/* Target odd children for left column */
+.form > *:nth-child(even) {
+  text-align: right;
+}
+
+/* Hide the file input visually */
+.form > input[type="file"] {
+  display: none;
+}
+
+.avatarImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
